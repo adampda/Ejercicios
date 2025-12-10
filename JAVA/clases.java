@@ -161,8 +161,40 @@ class Carrito {
 public class Main {
     public static void main(String[] args) {
 
-        // PRUEBAS AQUÍ
-        // Crear objetos, llamar métodos, etc.
+        // EJERCICIO 1: Coche
+        // Enunciado:
+        //   - Crear un coche con marca y modelo.
+        //   - Llamar varias veces a acelerar() y frenar().
+        //   - Mostrar los datos finales del coche.
+
+        // EJERCICIO 2: Alumno y notas
+        // Enunciado:
+        //   - Crear un alumno con su nombre.
+        //   - Añadir varias notas con añadirNota().
+        //   - Mostrar la información completa.
+        //   - Calcular y mostrar la media.
+
+        // EJERCICIO 3: Cuenta Bancaria
+        // Enunciado:
+        //   - Crear una cuenta bancaria con titular y saldo inicial.
+        //   - Ingresar una cantidad.
+        //   - Retirar otra cantidad.
+        //   - Intentar retirar más de lo disponible (debe impedirse).
+        //   - Mostrar el saldo final.
+
+        // EJERCICIO 4: Biblioteca y Libros
+        // Enunciado:
+        //   - Crear varios libros.
+        //   - Añadirlos a una biblioteca.
+        //   - Prestar un libro por título.
+        //   - Devolver un libro.
+        //   - Mostrar si realmente cambia su disponibilidad.
+  
+        // EJERCICIO 5: Producto y Carrito
+        // Enunciado:
+        //   - Crear 3 productos con nombre y precio.
+        //   - Añadirlos al carrito.
+        //   - Calcular el total del carrito.
 
     }
 }
