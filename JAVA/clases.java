@@ -10,16 +10,65 @@ class Coche {
     private int velocidad;
 
     // Constructor COMPLETAR
-    
+    public Coche( String marca, String modelo, int velocidad) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.velocidad = velocidad;
+    }
+
+    //Getter y setter
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public int getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(int velocidad) {
+        this.velocidad = velocidad;
+    }
     
     // Método acelerar (suma +10) COMPLETAR
-   
+    
+    public void acelerar (Coche coche) {
+        coche.setVelocidad(coche.getVelocidad() + 10);
+        System.out.println("El coche ha acelerado hasta " + coche.getVelocidad() + " km/h");
+    }
 
     // Método frenar (resta -10 y nunca menor que 0) COMPLETAR
    
+    public void frenar(Coche coche) {
+        int frenar = 10;
+
+        if (coche.getVelocidad() <= 0) {
+            System.out.println("El coche ya no puede frenar más");
+        } else if (coche.getVelocidad() > frenar) {
+            System.out.println("El coche no puede frenar tanto");
+        } else {
+            coche.setVelocidad(coche.getVelocidad() - frenar);
+            System.out.printl("Frenada realizada con exito");
+        }
+    }
 
     // Método mostrarDatos COMPLETAR
     
+    public String mostrarDatos(Coche coche) {
+        return "Marca: " + coche.getMarca + ". \nModelo: " + coche.getModelo + ". \nVelocidad: " + coche.getVelocidad;
+    }
 
 }
 
@@ -38,6 +87,11 @@ class Alumno {
     private ArrayList<Integer> notas;
 
     // Constructor COMPLETAR
+
+    public Alumno (String nombre) {
+        this.nombre = nombre;
+        this.notas = new ArrayList<>();
+    }
    
 
     // Método añadirNota COMPLETAR
@@ -160,6 +214,8 @@ class Carrito {
 
 public class Main {
     public static void main(String[] args) {
+
+        private Coche coche = new Coche("BMW", "M3", 0);
 
         // EJERCICIO 1: Coche
         // Enunciado:
